@@ -1,10 +1,12 @@
-﻿Module Module1
+﻿Imports SudoHelper
+
+Module Module1
 
     Sub Main()
         If Command() = "" Then
             Return
         End If
-        Shell(Command(), AppWinStyle.NormalFocus)
+        Helper.Sys(Command(), True)
     End Sub
 
 End Module
